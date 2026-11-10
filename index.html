@@ -5,97 +5,286 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101827">
+
 <meta property="og:title" content="LE VINH PC | Computer & Technology">
 <meta property="og:description" content="Thiết bị máy tính, linh kiện và phụ kiện công nghệ. Chất lượng và tận tâm.">
 <meta property="og:image" content="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/dec2e0809dbe44b688dc54b42a5fa6f5~tplv-aphluv4xwc-resize-webp:260:260.webp">
+
 <title>LE VINH PC | Computer & Technology</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f5f8;color:#172033}
-header{background:#101827;color:white;padding:20px 6%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:26px;font-weight:900;letter-spacing:1px}
-.logo span{color:#39b9ff}
-nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
-.hero{background:linear-gradient(120deg,#101827,#243c5b);color:white;padding:65px 7%;text-align:center}
-.hero h1{font-size:42px;margin:0 0 15px}
-.hero p{color:#d1dbea;font-size:17px}
-.container{max-width:1100px;margin:40px auto;padding:0 18px}
-.section-title{text-align:center;margin-bottom:28px}
-.section-title h2{font-size:28px}
-.product{background:white;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 8px 30px #15243b12}
-.product img{width:100%;height:100%;min-height:350px;object-fit:contain;background:#fff}
-.info{padding:35px}
-.tag{color:#087fc1;font-weight:bold;font-size:13px}
-.info h2{font-size:25px;line-height:1.4}
-.price{font-size:30px;color:#e52b43;font-weight:800;margin:20px 0}
-.old{font-size:15px;color:#999;text-decoration:line-through}
-ul{padding-left:20px;line-height:2;color:#505b6d}
-.buy{display:inline-block;background:#ee2850;color:white;padding:16px 28px;border-radius:9px;text-decoration:none;font-weight:bold;margin-top:15px}
-.buy:hover{background:#c9163b}
-.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:35px 0}
-.trust div{background:white;padding:22px;border-radius:12px;text-align:center;font-weight:bold}
-footer{background:#101827;color:#ccd4df;text-align:center;padding:30px 15px;line-height:1.8}
-@media(max-width:700px){
-header{padding:18px;flex-wrap:wrap;gap:12px}
-nav a{margin:0 10px 0 0}
-.hero{padding:48px 18px}
-.hero h1{font-size:30px}
-.product{grid-template-columns:1fr}
-.product img{min-height:260px}
-.info{padding:24px}
-.trust{grid-template-columns:1fr}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #172033;
+}
+
+header {
+    background: #101827;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #39b9ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #101827, #243c5b);
+    color: white;
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.hero p {
+    color: #d1dbea;
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 18px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+}
+
+.product {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 8px 30px #15243b12;
+}
+
+.product-image {
+    display: block;
+    cursor: pointer;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: contain;
+    background: white;
+    transition: transform .3s;
+}
+
+.product-image:hover img {
+    transform: scale(1.03);
+}
+
+.info {
+    padding: 35px;
+}
+
+.tag {
+    color: #087fc1;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info h2 {
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.price {
+    font-size: 30px;
+    color: #e52b43;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.old {
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 2;
+    color: #505b6d;
+}
+
+.trust {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.trust div {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #101827;
+    color: #ccd4df;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 1.8;
+}
+
+@media(max-width:700px) {
+    header {
+        padding: 18px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 10px 0 0;
+    }
+
+    .hero {
+        padding: 48px 18px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .product {
+        grid-template-columns: 1fr;
+    }
+
+    .product img {
+        min-height: 260px;
+    }
+
+    .info {
+        padding: 24px;
+    }
+
+    .trust {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="logo">LE <span>VINH</span> PC</div>
-<nav><a href="#">Trang chủ</a><a href="#products">Sản phẩm</a><a href="#contact">Liên hệ</a></nav>
+    <div class="logo">LE <span>VINH</span> PC</div>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
 </header>
 
 <section class="hero">
-<h1>LE VINH PC</h1>
-<p>COMPUTER · HARDWARE · TECHNOLOGY</p>
-<p>Giải pháp công nghệ – Chất lượng tạo niềm tin</p>
+    <h1>LE VINH PC</h1>
+    <p>COMPUTER · HARDWARE · TECHNOLOGY</p>
+    <p>Giải pháp công nghệ – Chất lượng tạo niềm tin</p>
 </section>
 
 <main class="container" id="products">
-<div class="section-title">
-<h2>SẢN PHẨM NỔI BẬT</h2>
-<p>Thiết bị và phụ kiện công nghệ được tuyển chọn</p>
-</div>
 
-<article class="product">
-<a href="https://shop.tiktok.com/vn/pdp/1738021104685843535" target="_blank" rel="noopener">
-  <img src="HUB%208%20IN%201.jpg" alt="LE VINH PC Hub USB 8 in 1">
-</div>
-<div class="info">
-<span class="tag">LE VINH PC · PHỤ KIỆN MÁY TÍNH</span>
-<h2>Hub Kép USB 3.0 / Type-C 8 in 1</h2>
-<p>Mở rộng kết nối cho laptop và máy tính với nhiều cổng kết nối tiện dụng.</p>
-<ul>
-<li>2 × USB-A 3.0</li>
-<li>2 × USB-A 2.0</li>
-<li>1 × USB-C Data</li>
-<li>Đầu đọc thẻ SD / TF</li>
-<li>Jack âm thanh 3.5mm</li>
-</ul>
-<div class="price">42.750đ <span class="old">45.000đ</span></div>
-</div>
-</article>
+    <div class="section-title">
+        <h2>SẢN PHẨM NỔI BẬT</h2>
+        <p>Thiết bị và phụ kiện công nghệ được tuyển chọn</p>
+    </div>
 
-<div class="trust">
-<div>✓ Sản phẩm rõ nguồn gốc</div>
-<div>✓ Tư vấn tận tâm</div>
-<div>✓ Hỗ trợ khách hàng</div>
-</div>
+    <article class="product">
+
+        <a class="product-image"
+           href="https://shop.tiktok.com/vn/pdp/1738021104685843535"
+           target="_blank"
+           rel="noopener">
+
+            <img
+                src="HUB%208%20IN%201.jpg"
+                alt="LE VINH PC Hub USB Type-C 8 in 1">
+        </a>
+
+        <div class="info">
+
+            <span class="tag">
+                LE VINH PC · PHỤ KIỆN MÁY TÍNH
+            </span>
+
+            <h2>Hub Kép USB 3.0 / Type-C 8 in 1</h2>
+
+            <p>
+                Mở rộng kết nối cho laptop và máy tính
+                với nhiều cổng kết nối tiện dụng.
+            </p>
+
+            <ul>
+                <li>2 × USB-A 3.0</li>
+                <li>2 × USB-A 2.0</li>
+                <li>1 × USB-C Data</li>
+                <li>Đầu đọc thẻ SD / TF</li>
+                <li>Jack âm thanh 3.5mm</li>
+            </ul>
+
+            <div class="price">
+                42.750đ
+                <span class="old">45.000đ</span>
+            </div>
+
+        </div>
+    </article>
+
+    <div class="trust">
+        <div>✓ Sản phẩm rõ nguồn gốc</div>
+        <div>✓ Tư vấn tận tâm</div>
+        <div>✓ Hỗ trợ khách hàng</div>
+    </div>
+
 </main>
 
 <footer id="contact">
-<strong>LE VINH PC</strong><br>
-Computer & Technology<br>
-Mỗi đơn hàng là một trách nhiệm, mỗi sản phẩm là một sự tận tâm.<br>
-© 2026 LE VINH PC. All rights reserved.
+    <strong>LE VINH PC</strong><br>
+    Computer & Technology<br>
+    Mỗi đơn hàng là một trách nhiệm,
+    mỗi sản phẩm là một sự tận tâm.<br>
+    © 2026 LE VINH PC. All rights reserved.
 </footer>
+
 </body>
 </html>
